@@ -122,7 +122,7 @@ abstract class CreationTaskBase extends BackgroundTaskBase
     /** @noinspection PhpUnusedParameterInspection */
     protected function getCreationReason(Request $request, User $user)
     {
-        return 'Requested account at [[WP:ACC]], request #' . $request->getId();
+        return 'Requested account at [[WP:ACC]], request #[[' . $request->getId() . ']]';
     }
 
     /**
